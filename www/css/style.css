@@ -1,0 +1,56 @@
+/* Empty. Add your own CSS if you like */
+#titles {
+	text-align: center;
+	padding-bottom: 20px;
+	color: white;
+}
+
+#image {
+	height: 300px;
+	width: auto;
+	padding: 0 50px 0 50px;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #003663;
+}
+
+a:hover {
+	color: black;
+}
+
+div.item-text-wrap {
+	line-height: 25px;
+}
+
+div.item.item-text-wrap {
+	padding-top: 0;
+}
+
+.episodeList {
+	padding-top: 0;
+}
+
+#mainPost {
+	padding: 0 20px 0 20px;
+	margin: 0;
+	background: url(../img/tv.jpg);
+}
+
+.title {
+	font-family: 'Dosis', sans-serif;
+	color: white;
+}
+.bar .title.title-left {
+	text-align: center;
+}
+
+.bar {
+	background-color: #003663;
+}
+
+.item {
+	background-color: #e1e1e1; 
+}

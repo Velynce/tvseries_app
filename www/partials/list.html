@@ -1,0 +1,14 @@
+<ion-header-bar>
+	<h1 class="title">Popular TV Series List</h1>
+</ion-header-bar>
+
+<ion-content>
+<ion-list id="list">
+	<ion-item ng-repeat="show in tvshows " class="item item-thumbnail-left">
+	<img data-ng-src="{{show['image_thumbnail_path']}}" alt="series Thumnail">
+	<a href="#details/{{show.id}}"><h2>{{show.name}}</h2>
+	<p>TV Network: {{show.network}} <span data-ng-if="!show.network">Unknown</span></p>
+	More Detail</a>
+	</ion-item>
+</ion-list>
+</ion-content>

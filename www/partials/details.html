@@ -1,0 +1,46 @@
+<ion-header-bar>
+	<h1 class="title">TV Show Information</h1>
+</ion-header-bar>
+
+<ion-content id="mainPost" class="cards-bg">
+		<h2 id="titles">{{tvDetail.name}}</h2>
+		<img id="image" data-ng-src="{{tvDetail['image_path']}}" alt="tv Logo">
+		<div class="card">
+			<div class="item item-divider">
+				<h2>Description:</h2>
+			</div>
+			<div class="item item-text-wrap">
+				{{tvDetail.description}}
+			</div>
+		</div>
+		<div class="card">
+			<div class="item item-divider">
+				Other Information:
+			</div>
+			<div class="item item-text-wrap">
+				<p>Genres: {{tvDetail.genres}}</p>
+				<p>Rating: {{tvDetail.rating}}</p>
+				<p>Country: {{tvDetail.country}}</p>
+				<p>Status: {{tvDetail.status}}</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="item item-divider">
+				<h2>Episodes</h2>
+			</div>
+			<ion-list>
+				<ion-item class="episodeList" ng-repeat="episode in episodes">
+					<p>Season: {{episode.season}}</p> 
+					<p>Name:</p> 
+					<p>{{episode.name}}</p>
+					<p>Air Date: {{episode['air_date']}}</p>
+				</ion-item>
+			</ion-list>
+
+		</div>
+
+</ion-content>
+
+<ion-footer-bar>
+	<button class="button icon-left ion-home" ng-click="goHome()">Home</button>
+</ion-footer-bar>
